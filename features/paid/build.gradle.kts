@@ -1,24 +1,20 @@
-@Suppress("DSL_SCOPE_VIOLATION")
+@Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.android.navigation.safeArgs)
+    alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.hilt)
     id("kotlin-kapt")
 }
 
 android {
-    namespace = "nik.borisov.hoteltest"
+    namespace = "nik.borisov.paid"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "nik.borisov.hoteltest"
         minSdk = libs.versions.minSdk.get().toInt()
-        targetSdk = libs.versions.targetSdk.get().toInt()
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -44,22 +40,15 @@ android {
 
 dependencies {
 
-    implementation(libs.android.appCompat)
     implementation(libs.android.core)
+    implementation(libs.android.fragment)
+    implementation(libs.android.recyclerView)
     implementation(libs.android.constraintLayout)
-    implementation(libs.android.navigationFragments)
-    implementation(libs.android.navigationUI)
 
     implementation(libs.google.material)
 
     implementation(libs.google.hilt.android)
     kapt(libs.google.hilt.compiler)
-    kapt(libs.kotlin.metadata)
 
     implementation(project(mapOf("path" to ":core:presentation")))
-    implementation(project(mapOf("path" to ":core:theme")))
-    implementation(project(mapOf("path" to ":features:booking")))
-    implementation(project(mapOf("path" to ":features:hotel")))
-    implementation(project(mapOf("path" to ":features:paid")))
-    implementation(project(mapOf("path" to ":features:rooms")))
 }
