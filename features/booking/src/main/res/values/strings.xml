@@ -1,0 +1,27 @@
+<resources>
+    <string name="departure">Вылет из</string>
+    <string name="location">Страна, город</string>
+    <string name="dates">Даты</string>
+    <string name="number_of_nights">Кол-во ночей</string>
+    <string name="hotel">Отель</string>
+    <string name="room">Номер</string>
+    <string name="nutrition">Питание</string>
+    <string name="customer_info">Информация о покупателе</string>
+    <string name="customer_info_description">Эти данные никому не передаются. После оплаты мы вышлем чек на указанный вами номер и почту</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="email">Почта</string>
+    <string name="name">Имя</string>
+    <string name="surname">Фамилия</string>
+    <string name="date_of_birth">Дата рождения</string>
+    <string name="nationality">Гражданство</string>
+    <string name="passport_number">Номер загранпаспорта</string>
+    <string name="passport_validity_period">Срок действия загранпаспорта</string>
+    <string name="add_tourist">Добавить туриста</string>
+    <string name="tour">Тур</string>
+    <string name="fuel_surcharge">Топливный сбор</string>
+    <string name="service_fee">Сервисный сбор</string>
+    <string name="to_pay">К оплате</string>
+    <string name="tourist">%1$s  турист</string>
+    <string name="number_of_nights_value">%1$d ночей</string>
+    <string name="to_pay_value">Оплатить %1$s ₽</string>
+</resources>

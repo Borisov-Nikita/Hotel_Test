@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/rounded_additional_item_bg"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/comfortImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:paddingEnd="15dp"
+        android:src="@drawable/ic_happy"
+        app:layout_constraintBottom_toBottomOf="@id/comfortSubTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/comfortTextView" />
+
+    <ImageView
+        android:id="@+id/includedImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_tick"
+        app:layout_constraintBottom_toBottomOf="@+id/includedSubTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/includedTextView" />
+
+    <ImageView
+        android:id="@+id/excludedImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_cross"
+        app:layout_constraintBottom_toBottomOf="@+id/excludedSubTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/excludedTextView" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="comfortImageView,includedImageView,excludedImageView" />
+
+    <TextView
+        android:id="@+id/comfortTextView"
+        style="@style/Global.Style.TextView.Description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/comfort"
+        android:textColor="@color/additional_title_text_color"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/comfortArrowImageView"
+        app:layout_constraintStart_toEndOf="@+id/barrier"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/comfortSubTextView"
+        style="@style/Global.Style.TextView.Description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/essentials"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/comfortArrowImageView"
+        app:layout_constraintStart_toEndOf="@+id/barrier"
+        app:layout_constraintTop_toBottomOf="@+id/comfortTextView" />
+
+    <ImageView
+        android:id="@+id/comfortArrowImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_arrow_right"
+        app:layout_constraintBottom_toBottomOf="@id/comfortSubTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/comfortTextView" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/dividerFirst"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        app:dividerColor="@color/color_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/barrier"
+        app:layout_constraintTop_toBottomOf="@+id/comfortSubTextView" />
+
+    <TextView
+        android:id="@+id/includedTextView"
+        style="@style/Global.Style.TextView.Description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/included"
+        android:textColor="@color/additional_title_text_color"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/includedArrowImageView"
+        app:layout_constraintStart_toStartOf="@+id/comfortTextView"
+        app:layout_constraintTop_toBottomOf="@+id/dividerFirst" />
+
+    <TextView
+        android:id="@+id/includedSubTextView"
+        style="@style/Global.Style.TextView.Description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/essentials"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/includedArrowImageView"
+        app:layout_constraintStart_toEndOf="@+id/barrier"
+        app:layout_constraintTop_toBottomOf="@+id/includedTextView" />
+
+    <ImageView
+        android:id="@+id/includedArrowImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_arrow_right"
+        app:layout_constraintBottom_toBottomOf="@id/includedSubTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/includedTextView" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/dividerSecond"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        app:dividerColor="@color/color_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/barrier"
+        app:layout_constraintTop_toBottomOf="@+id/includedSubTextView" />
+
+    <TextView
+        android:id="@+id/excludedTextView"
+        style="@style/Global.Style.TextView.Description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/excluded"
+        android:textColor="@color/additional_title_text_color"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/excludedArrowImageView"
+        app:layout_constraintStart_toStartOf="@+id/barrier"
+        app:layout_constraintTop_toBottomOf="@+id/dividerSecond" />
+
+    <TextView
+        android:id="@+id/excludedSubTextView"
+        style="@style/Global.Style.TextView.Description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/essentials"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/excludedArrowImageView"
+        app:layout_constraintStart_toEndOf="@+id/barrier"
+        app:layout_constraintTop_toBottomOf="@+id/excludedTextView" />
+
+    <ImageView
+        android:id="@+id/excludedArrowImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_arrow_right"
+        app:layout_constraintBottom_toBottomOf="@id/excludedSubTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/excludedTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.hilt)
     id("kotlin-kapt")
+    id("kotlin-parcelize")
 }
 
 android {
@@ -50,5 +51,6 @@ dependencies {
     implementation(libs.google.hilt.android)
     kapt(libs.google.hilt.compiler)
 
+    implementation(project(mapOf("path" to ":core:common")))
     implementation(project(mapOf("path" to ":core:presentation")))
 }

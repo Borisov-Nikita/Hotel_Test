@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Hotel Test</string>
+    <string name="hotel_screen_label">Отель</string>
+    <string name="booking_screen_label">Бронирование</string>
+    <string name="paid_screen_label">Заказ оплачен</string>
+    <string name="rooms_screen_label">Номера</string>
 </resources>

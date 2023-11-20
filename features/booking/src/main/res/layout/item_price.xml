@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/rounded_recycler_view_item_bg"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tourTextView"
+        style="@style/Global.Style.TextView.Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tourValueTextView" />
+
+    <TextView
+        android:id="@+id/fuelSurchargeTextView"
+        style="@style/Global.Style.TextView.Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fuel_surcharge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/fuelSurchargeValueTextView" />
+
+    <TextView
+        android:id="@+id/serviceFeeTextView"
+        style="@style/Global.Style.TextView.Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/service_fee"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/serviceFeeValueTextView" />
+
+    <TextView
+        android:id="@+id/toPayTextView"
+        style="@style/Global.Style.TextView.Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/to_pay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/toPayValueTextView" />
+
+    <TextView
+        android:id="@+id/tourValueTextView"
+        style="@style/Global.Style.TextView.Description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="186 600 ₽" />
+
+    <TextView
+        android:id="@+id/fuelSurchargeValueTextView"
+        style="@style/Global.Style.TextView.Description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tourValueTextView"
+        tools:text="9 300 ₽" />
+
+    <TextView
+        android:id="@+id/serviceFeeValueTextView"
+        style="@style/Global.Style.TextView.Description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fuelSurchargeValueTextView"
+        tools:text="2 136 ₽" />
+
+    <TextView
+        android:id="@+id/toPayValueTextView"
+        style="@style/Global.Style.TextView.Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="?attr/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serviceFeeValueTextView"
+        tools:text="198 036 ₽" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+
+    <string name="room_details">Подробнее о номере</string>
+    <string name="choose_room">Выбрать номер</string>
+</resources>

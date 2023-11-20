@@ -1,0 +1,6 @@
+<resources>
+
+    <string name="fine">Супер!</string>
+    <string name="title_paid_processed">Ваш заказ принят в работу</string>
+    <string name="description_paid_processed">Подтверждение заказа №%1$d может занять некоторое время (от 1 часа до суток). Как только мы получим ответ от туроператора, вам на почту придет уведомление.</string>
+</resources>

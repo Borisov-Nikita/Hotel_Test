@@ -1,6 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Base.Theme.HotelTest.Core" parent="Theme.Material3.DayNight.NoActionBar" />
+    <style name="Base.Theme.HotelTest.Core" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <item name="materialButtonStyle">@style/Global.Style.Button</item>
+        <item name="textInputStyle">@style/Global.Style.TextInputLayout</item>
+    </style>
+
+    <style name="Global.Style.Button" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">15dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/sf_pro_display</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Global.Style.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="titleCentered">true</item>
+        <item name="navigationIcon">@drawable/ic_nav_icon_back</item>
+        <item name="titleTextAppearance">@style/TextAppearance.TextTitleToolbar</item>
+
+    </style>
+
+    <style name="Global.Style.TextView.Title" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/sf_pro_display</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="Global.Style.TextView.Description" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/description_text_color</item>
+        <item name="fontFamily">@font/sf_pro_display</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Global.Style.TextView.Price" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/sf_pro_display</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="TextAppearance.TextInputLayout.Hint" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/sf_pro_display</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearance.TextInputEditText" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/sf_pro_display</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.TextTitleToolbar" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/sf_pro_display</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Global.Style.TextInputLayout" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@drawable/edit_text_bg</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="hintTextAppearance">@style/TextAppearance.TextInputLayout.Hint</item>
+        <item name="hintTextColor">@color/edit_text_hint_color</item>
+        <item name="android:textColorHint">@color/edit_text_hint_color</item>
+    </style>
+
+    <style name="Global.Style.TextInputEditText" parent="Widget.Material3.TextInputEditText.FilledBox">
+        <item name="android:textAppearance">@style/TextAppearance.TextInputEditText</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
 
 </resources>

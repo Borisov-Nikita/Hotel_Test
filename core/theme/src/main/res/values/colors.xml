@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#0D72FF</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="recycler_view_bg">#F6F6F9</color>
+
+    <color name="rating_item_color">#FFA800</color>
+    <color name="rating_item_color_bg">#33FFC700</color>
+
+    <color name="description_text_color">#828796</color>
+    <color name="additional_title_text_color">#2C3035</color>
+
+    <color name="edit_text_hint_color">#A9ABB7</color>
+    <color name="edit_text_text_color">#14142B</color>
+    <color name="edit_text_error_color">#26EB5757</color>
+
+    <color name="peculiarities_bg">#FBFBFC</color>
+
+    <color name="divider_color">#E8E9EC</color>
+
+    <color name="black_alpha_20">#33000000</color>
+
+
+</resources>

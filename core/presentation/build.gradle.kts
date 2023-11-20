@@ -45,5 +45,7 @@ dependencies {
 
     implementation(libs.google.material)
 
+    implementation(libs.picasso)
+
     implementation(project(mapOf("path" to ":core:theme")))
 }

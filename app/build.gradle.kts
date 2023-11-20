@@ -1,7 +1,6 @@
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.android.navigation.safeArgs)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.hilt)
     id("kotlin-kapt")
@@ -48,7 +47,6 @@ dependencies {
     implementation(libs.android.core)
     implementation(libs.android.constraintLayout)
     implementation(libs.android.navigationFragments)
-    implementation(libs.android.navigationUI)
 
     implementation(libs.google.material)
 
@@ -56,8 +54,10 @@ dependencies {
     kapt(libs.google.hilt.compiler)
     kapt(libs.kotlin.metadata)
 
+    implementation(project(mapOf("path" to ":core:common")))
     implementation(project(mapOf("path" to ":core:presentation")))
     implementation(project(mapOf("path" to ":core:theme")))
+    implementation(project(mapOf("path" to ":data")))
     implementation(project(mapOf("path" to ":features:booking")))
     implementation(project(mapOf("path" to ":features:hotel")))
     implementation(project(mapOf("path" to ":features:paid")))
